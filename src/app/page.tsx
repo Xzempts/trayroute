@@ -20,6 +20,9 @@ export default function Home() {
             <Button asChild variant="outline" className="h-10 px-4">
               <Link href="/products/route">Open Route</Link>
             </Button>
+            <Button asChild variant="outline" className="h-10 px-4">
+              <Link href="/deck">Read the pitch</Link>
+            </Button>
           </div>
         </div>
       </section>

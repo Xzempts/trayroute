@@ -7,6 +7,7 @@ const links = [
   { href: "/#products", label: "Products" },
   { href: "/products/tray", label: "Counting tray" },
   { href: "/products/route", label: "Route" },
+  { href: "/deck", label: "Pitch deck" },
 ]
 
 export function SiteHeader() {

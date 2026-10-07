@@ -20,6 +20,9 @@ export function SiteFooter() {
           <Link href="/#products" className="hover:text-[#1c1916]">
             Products
           </Link>
+          <Link href="/deck" className="hover:text-[#1c1916]">
+            Pitch deck
+          </Link>
         </nav>
       </div>
     </footer>
