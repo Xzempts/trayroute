@@ -125,11 +125,11 @@ export function RoutePlanner() {
   }
 
   return (
-    <div className="overflow-hidden rounded-[28px] border border-[#ddd4c4] bg-[#f7f3ea] shadow-[0_24px_50px_rgba(40,36,28,0.12)]">
-      <div className="flex items-center justify-between gap-3 border-b border-[#ddd4c4] px-4 py-3">
+    <div className="overflow-hidden rounded-xl border border-[#e5e5eb] bg-white shadow-[0_12px_24px_rgba(16,24,40,0.08)]">
+      <div className="flex items-center justify-between gap-3 border-b border-[#e5e5eb] px-4 py-3">
         <div>
-          <p className="font-mono text-[10px] tracking-[0.18em] text-[#6b6358] uppercase">Trayroute</p>
-          <p className="font-serif text-xl leading-none">Scan the bags</p>
+          <p className="text-xs font-medium text-[#717680]">Trayroute</p>
+          <p className="text-lg font-semibold leading-none text-[#18181b]">Scan the bags</p>
         </div>
         <p className="text-right font-mono text-xs text-[#5c564c]">
           {ordered ? `${miles.toFixed(1)} mi · ${driveMinutes} min` : `${scanned.length} scanned`}
@@ -159,7 +159,7 @@ export function RoutePlanner() {
                   </span>
                   {active && <span className="bag-laser absolute right-1 left-1 h-0.5 bg-[#1564dc] shadow-[0_0_8px_#1564dc]" />}
                   {read && (
-                    <span className="absolute right-1.5 bottom-1.5 rounded-full bg-[#173f90] px-1.5 py-0.5 font-mono text-[8px] tracking-wide text-white uppercase">
+                    <span className="absolute right-1.5 bottom-1.5 rounded-full bg-[#0066ff] px-1.5 py-0.5 font-mono text-[8px] tracking-wide text-white uppercase">
                       Read
                     </span>
                   )}
@@ -180,7 +180,7 @@ export function RoutePlanner() {
                 : "Point the scanner at a bag. The address on the label becomes a stop."}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <Button type="button" className="h-10 bg-[#173f90] text-white hover:bg-[#173f90]/90" onClick={scanAll} disabled={busy.current || remaining.length === 0}>
+          <Button type="button" className="h-10 rounded-lg" onClick={scanAll} disabled={busy.current || remaining.length === 0}>
             {busy.current ? "Scanning…" : remaining.length === 0 ? "Bags scanned" : "Scan the bags"}
           </Button>
           <Button type="button" variant="outline" className="h-10" onClick={() => setOrdered(true)} disabled={busy.current || scanned.length === 0 || ordered}>
@@ -212,7 +212,7 @@ export function RoutePlanner() {
             const marker = isStore ? "Rx" : ordered ? String(index) : "•"
             return (
               <g key={`${stop.id}-${index}`}>
-                <circle cx={stop.x} cy={stop.y} r={isStore ? 16 : 13} fill={isStore ? "#c45e10" : "#173f90"} />
+                <circle cx={stop.x} cy={stop.y} r={isStore ? 16 : 13} fill={isStore ? "#c45e10" : "#0066ff"} />
                 <text x={stop.x} y={stop.y + 4} textAnchor="middle" fontSize="11" fill="#f7f3ea" fontFamily="ui-monospace, monospace">
                   {marker}
                 </text>

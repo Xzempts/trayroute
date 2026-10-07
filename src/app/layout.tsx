@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist_Mono, Outfit } from "next/font/google";
+import { Fraunces, Geist_Mono, Instrument_Sans } from "next/font/google";
 import { SiteChrome } from "@/components/site-chrome";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const instrument = Instrument_Sans({
+  variable: "--font-instrument",
   subsets: ["latin"],
   display: "swap",
 });
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${instrument.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <SiteChrome>{children}</SiteChrome>

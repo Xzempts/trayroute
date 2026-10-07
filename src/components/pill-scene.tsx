@@ -404,17 +404,14 @@ export function PillScene() {
       <main>
         <section className="px-5 pt-6 pb-2 md:px-8 md:pt-8">
           <div className="prose-wash relative z-30 mx-auto max-w-3xl">
-            <p className="font-serif text-[1.65rem] tracking-tight text-[#1c1916]">Trayroute</p>
-            <p className="mt-8 font-mono text-[11px] tracking-[0.22em] text-[#6b6358] uppercase">
-              Pharmacy counting tray
-            </p>
-            <h1 className="mt-3 max-w-3xl font-serif text-[clamp(3.1rem,7vw,5.6rem)] leading-[0.9] tracking-[-0.045em] text-[#1c1916]">
+            <p className="text-sm font-semibold text-[#0066ff]">Pharmacy counting tray</p>
+            <h1 className="mt-3 max-w-3xl text-5xl font-semibold tracking-tight text-[#18181b]">
               The tray counts.
             </h1>
-            <p className="mt-4 max-w-xl text-lg leading-snug text-[#3c342c]">
+            <p className="mt-4 max-w-xl text-lg leading-8 text-[#636367]">
               Thirty tablets sit on the blue tray. The spatula slides them into the acrylic tube, five at a time, and the display holds the number.
             </p>
-            <p className="mt-3 max-w-xl text-lg leading-snug text-[#3c342c]">
+            <p className="mt-3 max-w-xl text-lg leading-8 text-[#636367]">
               The red button resets the count. Scroll, and the tray tips them out.
             </p>
           </div>
@@ -511,7 +508,7 @@ export function PillScene() {
 
         <section className="flex min-h-[78vh] items-center px-5">
           <div className="prose-wash relative z-30 mx-auto max-w-xl px-2 py-2">
-            <h2 className="font-serif text-[clamp(2.8rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.04em]">
+            <h2 className="text-4xl font-semibold tracking-tight text-[#18181b] md:text-5xl">
               The tray tips.
             </h2>
             <p className="mt-4 max-w-md text-lg leading-snug text-[#3c342c]">
@@ -526,7 +523,7 @@ export function PillScene() {
         <section className="flex min-h-[88vh] items-end px-5 pb-16 md:items-center md:pb-0">
           <div className="prose-wash relative z-30 mx-auto max-w-xl px-2 py-2">
             <p className="font-mono text-[11px] tracking-[0.22em] text-[#6b6358] uppercase">On the bench</p>
-            <h2 className="mt-3 font-serif text-[clamp(2.8rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.04em]">
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#18181b] md:text-5xl">
               Five at a time.
             </h2>
             <p className="mt-4 max-w-md text-lg leading-snug text-[#3c342c]">
@@ -540,7 +537,7 @@ export function PillScene() {
 
         <section className="flex min-h-[72vh] items-center px-5">
           <div className="prose-wash relative z-30 mx-auto max-w-xl px-2 py-2">
-            <h2 className="font-serif text-[clamp(2.8rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.04em]">
+            <h2 className="text-4xl font-semibold tracking-tight text-[#18181b] md:text-5xl">
               All the way down.
             </h2>
             <p className="mt-4 max-w-md text-lg leading-snug text-[#3c342c]">
@@ -555,7 +552,7 @@ export function PillScene() {
         <section className="flex min-h-[70vh] items-center px-5">
           <div className="prose-wash relative z-30 mx-auto max-w-xl px-2 py-2">
             <p className="font-mono text-[11px] tracking-[0.22em] text-[#6b6358] uppercase">Before the label</p>
-            <h2 className="mt-3 font-serif text-[clamp(2.8rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.04em]">
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#18181b] md:text-5xl">
               Check the number.
             </h2>
             <p className="mt-4 max-w-md text-lg leading-snug text-[#3c342c]">
@@ -569,7 +566,7 @@ export function PillScene() {
 
         <section className="flex min-h-[100svh] flex-col items-center justify-center px-5 pt-10 pb-20">
           <div className="prose-wash relative z-30 mb-12 max-w-xl px-2 py-2 text-center">
-            <h2 className="font-serif text-[clamp(2.8rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.04em]">
+            <h2 className="text-4xl font-semibold tracking-tight text-[#18181b] md:text-5xl">
               Into the bottle.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-lg leading-snug text-[#3c342c]">
@@ -615,7 +612,7 @@ export function PillScene() {
               </div>
             </div>
           </div>
-          <p className="prose-wash relative z-30 mt-10 px-4 py-2 text-center font-serif text-2xl tracking-tight text-[#1c1916]">
+          <p className="prose-wash relative z-30 mt-10 px-4 py-2 text-center text-2xl font-semibold tracking-tight text-[#18181b]">
             The tray counts.
           </p>
         </section>
